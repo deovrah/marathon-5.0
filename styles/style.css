@@ -1,0 +1,162 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/normal/400.woff2") format("woff2"), url("../fonts/montserrat/normal/400.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/normal/500.woff2") format("woff2"), url("../fonts/montserrat/normal/500.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #533738;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+a:focus, a:active {
+	opacity: 0.2;
+}
+
+.page {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #533738;
+	background-color: #EFE6E4;
+}
+
+.header {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	padding: 36px 0 0;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: space-between;
+	width: 842px;
+}
+
+.main {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.advantages {
+	box-sizing: border-box;
+	min-height: 715px;
+	padding: 152px 700px 0 184px;
+	background: #E2C4BA url("../images/advantages.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.advantages-heading {
+	margin: 0;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 62px;
+}
+
+.advantages-text {
+	margin: 0 0 22px;
+	padding: 24px 0 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.button {
+	padding: 24px 68px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	background-color: #CC8B86;
+}
+
+.heading {
+	padding: 65px 0 0;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.features-heading {
+	text-align: center;
+}
+
+.features-container {
+	display: grid;
+	grid-template-columns: 444px 1fr;
+	grid-column-gap: 64px;
+	padding: 40px 182px;
+}
+
+.features-text {
+	padding: 0 0 48px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 84px 182px;
+	background-color: #8D7370;
+	font-size: 30px;
+	line-height: 38px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.features-item {
+	width: min-content;
+}
+
+.features-item span {
+	font-size: 50px;
+	line-height: 62px;
+}
+
+#mapId {
+	width: 590px;
+	height: 624px;
+}
