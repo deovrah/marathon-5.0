@@ -80,6 +80,9 @@ a:focus, a:active {
 }
 
 .advantages {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	box-sizing: border-box;
 	min-height: 715px;
 	padding: 152px 700px 0 184px;
