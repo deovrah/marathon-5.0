@@ -98,14 +98,14 @@ a:focus, a:active {
 }
 
 .advantages-text {
-	margin: 0 0 22px;
-	padding: 24px 0 0;
+	margin: 0 0 24px;
+	padding: 20px 0 0;
 	font-size: 18px;
 	line-height: 30px;
 }
 
 .button {
-	padding: 24px 68px;
+	padding: 26px 68px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 24px;
@@ -128,11 +128,11 @@ a:focus, a:active {
 	display: grid;
 	grid-template-columns: 444px 1fr;
 	grid-column-gap: 64px;
-	padding: 40px 182px;
+	padding: 40px 182px 20px;
 }
 
 .features-text {
-	padding: 0 0 48px;
+	padding: 0 0 30px;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -141,10 +141,10 @@ a:focus, a:active {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 84px 182px;
+	padding: 86px 182px 74px;
 	background-color: #8D7370;
 	font-size: 30px;
-	line-height: 38px;
+	line-height: 50px;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
@@ -157,6 +157,76 @@ a:focus, a:active {
 .features-item span {
 	font-size: 50px;
 	line-height: 62px;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 1200px;
+	margin: 0 auto 0;
+}
+
+.works-heading {
+	margin: 0 0 40px;
+}
+
+.works-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 20px;
+	row-gap: 26px;
+}
+
+.works-item {
+	position: relative;
+	width: min-content;
+	min-height: 452px;
+}
+
+.works-description {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 99%;
+	padding: 88px 36px;
+	opacity: 0;
+}
+
+.works-description:hover, .works-description:focus, .works-description:active {
+	background-color: rgba(100, 72, 69, 0.8);
+	opacity: 1;
+}
+
+.works-headline {
+	padding: 0 60px 20px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 36px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.works-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+.works-button {
+	align-self: center;
+	margin-top: 36px;
+	padding: 0 70px 0 0;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 37px;
+	background: url(../images/arrow.svg) right no-repeat;
 }
 
 #mapId {
