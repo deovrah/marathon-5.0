@@ -84,7 +84,7 @@
 			<a href="index.html" class="works-button">Смотреть ещё</a>
 		</section>
 		<section class="people" id="people">
-			<h2 class="people-heading">Команда</h2>
+			<h2 class="heading people-heading">Команда</h2>
 			<ul class="people-list">
 				<li class="people-item">
 					<img src="images/people-1.jpg" alt="Фотография дизайнера Маши." width="320" height="253">
@@ -101,7 +101,7 @@
 			</ul>
 		</section>
 		<section class="steps" id="steps">
-			<h2 class="steps-heading">Как мы работаем</h2>
+			<h2 class="heading steps-heading">Как мы работаем</h2>
 			<ol class="steps-list">
 				<li class="steps-item">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
 				<li class="steps-item">Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
@@ -110,48 +110,59 @@
 			</ol>
 		</section>
 		<section class="reviews" id="reviews">
-			<h2 class="reviews-heading">Отзывы</h2>
+			<h2 class="heading reviews-heading">Отзывы</h2>
 			<ul class="slider">
-				<li class="slide">
-					<blockquote cite="https://www.instagram.com/p/CegwdlqrnUz/">
-						<p class="slide-text">&#171;Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
-						<p class="slide-text">Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
-						<p class="slide-text">Буду советовать и своим друзьям к вам обращаться!&#187;</p>
-					</blockquote>
-					<cite>Анна Беловская</cite>
-					<img src="images/reviews-1.jpg" alt="Пример работы для Анны." width="406" height="272">
-					<img src="images/reviews-2.jpg" alt="Пример гостинной для Анны." width="406" height="272">
+				<li class="slide script-item">
+					<div class="slide-description">
+						<blockquote cite="https://www.instagram.com/p/CegwdlqrnUz/">
+							<p class="slide-text">&#171;Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+							<p class="slide-text">Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+							<p class="slide-text">Буду советовать и своим друзьям к вам обращаться!&#187;</p>
+						</blockquote>
+						<cite>Анна Беловская</cite>
+					</div>
+					<div class="slide-images">
+						<img src="images/reviews-1.jpg" alt="Пример работы для Анны." width="406" height="272">
+						<img src="images/reviews-2.jpg" alt="Пример гостинной для Анны." width="406" height="272">
+					</div>
 				</li>
-				<li class="slide">
-					<blockquote cite="https://www.instagram.com/p/CegwTBurJUY/">
-						<p class="slide-text">&#171;Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
-						<p class="slide-text">Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
-						<p class="slide-text">Буду советовать и своим друзьям к вам обращаться!&#187;</p>
-					</blockquote>
-					<cite>Вероника Чернова</cite>
-					<img src="images/reviews-2.jpg" alt="Пример гостинной для Вероники." width="406" height="272">
-					<img src="images/reviews-1.jpg" alt="Пример работы для Вероники." width="406" height="272">
+				<li class="slide script-item">
+					<div class="slide-description">
+						<blockquote cite="https://www.instagram.com/p/CegwTBurJUY/">
+							<p class="slide-text">&#171;Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+							<p class="slide-text">Буду советовать и своим друзьям к вам обращаться!</p>
+							<p class="slide-text">Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.&#187;</p>
+						</blockquote>
+						<cite>Вероника Чернова</cite>
+					</div>
+					<div class="slide-images">
+						<img src="images/reviews-2.jpg" alt="Пример гостинной для Вероники." width="406" height="272">
+						<img src="images/reviews-1.jpg" alt="Пример работы для Вероники." width="406" height="272">
+					</div>
 				</li>
 			</ul>
 			<div class="slider-controls">
 				<button class="slider-button" type="button">
-					<img src="images/arrow-previous.svg" alt="Предыдущий отзыв." width="32">
+					<img src="images/arrow-previous.svg" alt="Предыдущий отзыв." onclick="moveSlide(-1)" width="32">
 				</button>
 				<button class="slider-button" type="button">
-					<img src="images/arrow-next.svg" alt="Следующий отзыв." width="32">
+					<img src="images/arrow-next.svg" alt="Следующий отзыв." onclick="moveSlide(1)" width="32">
 				</button>
 			</div>
+			<script src="scripts/slider.js"></script>
 		</section>
 		<section class="request" id="request">
-			<h2 class="request-heading">Оставить заявку</h2>
-			<p class="request-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-			<form method="post" action="form.php">
-				<label for="name" class="visually-hidden">Укажите ваше имя:</label>
-				<input type="text" name="name" placeholder="Ваше имя" required>
-				<label for="tel" class="visually-hidden">Введите ваш телефон:</label>
-				<input type="tel" name="tel" placeholder="Введите телефон" required>
-				<input type="submit" value="Оставить заявку">
-			</form>
+			<div class="request-wrapper">
+				<h2 class="heading request-heading">Оставить заявку</h2>
+				<p class="request-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+				<form class="request-form" method="post" action="form.php">
+					<label class="visually-hidden" for="name">Укажите ваше имя:</label>
+					<input class="request-input" type="text" name="name" placeholder="Ваше имя" required>
+					<label class="visually-hidden" for="tel">Введите ваш телефон:</label>
+					<input class="request-input" type="tel" name="tel" placeholder="Введите телефон" required>
+					<input class="button request-button" type="submit" value="Оставить заявку">
+				</form>
+			</div>
 			<div id="mapId"></div>
 		</section>
 	</main>
