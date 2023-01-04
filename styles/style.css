@@ -71,6 +71,8 @@ a:focus, a:active {
 .menu-list {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
 	width: 842px;
 }
 
@@ -140,6 +142,7 @@ a:focus, a:active {
 
 .features-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 86px 182px 74px;
@@ -414,6 +417,11 @@ a:focus, a:active {
 	padding-top: 40px;
 }
 
+.request-input {
+	display: block;
+	outline: 0;
+}
+
 .request-input, .request-input::placeholder {
 	padding-bottom: 10px;
 	font-weight: 400;
@@ -424,7 +432,6 @@ a:focus, a:active {
 	border-width: 1px;
 	border-style: hidden;
 	border-bottom-style: solid;
-	outline: 0;
 }
 
 .request-button {
@@ -432,9 +439,19 @@ a:focus, a:active {
 	border: none;
 }
 
+.request-button:hover {
+	opacity: 0.7;
+}
+
+.request-button:focus, .request-button:active {
+	opacity: 0.2;
+}
+
 #mapId {
 	width: 590px;
 	height: 624px;
+	background-image: url('images/map.jpg');
+	background-size: cover;
 }
 
 .footer {
